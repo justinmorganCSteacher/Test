@@ -27,4 +27,7 @@ public class Test {
             }
             return true;
         }
+        int x = 5;
+        System.out.println("Hello World" + x);
+    }
 }
