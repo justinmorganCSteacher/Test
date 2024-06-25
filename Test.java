@@ -1,10 +1,11 @@
 public class Test {
     public static void main(String[] args) {
         System.out.println(new Test().canJump(new int[]{2,5,0,0}));
+	int x = 5;                                
+        System.out.println("Hello World" + x);
     }
 
-
-        public boolean canJump(int[] nums) {
+    public boolean canJump(int[] nums) {
             int i = 0;
             int j = 0;
             while (i < nums.length - 1) {
@@ -19,15 +20,13 @@ public class Test {
                         }
                     }
                     if (!flag)
-                    return false;
+                      return false;
                 } else {
-                j = i;
-                i += nums[i];
+                    j = i;
+                    i += nums[i];
                 }
             }
             return true;
-        }
-        int x = 5;
-        System.out.println("Hello World" + x);
-    }
+   }
+        
 }
